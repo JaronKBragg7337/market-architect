@@ -1,0 +1,8 @@
+import type { MarketEvent } from "@market-architect/shared";
+
+export const EVENTS_2: Omit<MarketEvent,"id"|"createdTick">[] = [
+  {headline:"Shipping corridor disruption lifts input costs",summary:"Energy and agricultural commodities jump while transport-heavy firms face margin pressure.",severity:.75,direct:{OIL:.022,WHEAT:.016,MOBI:-.011},sectorEffects:{Energy:.012,Agriculture:.01,Industrials:-.006},macroEffects:{energyPressure:.007,inflation:.0015},secondOrder:[{delay:2,headline:"Manufacturers pass higher logistics costs to customers",sectorEffects:{Industrials:-.004,Utilities:-.002,"Precious Metals":.003}}]},
+  {headline:"Crypto network activity accelerates",summary:"Application fees and stablecoin settlement volumes rise sharply.",severity:.68,direct:{ETHX:.024,BTCX:.013,TBTK:.004},sectorEffects:{Crypto:.012,"Crypto Yield":.005},macroEffects:{cryptoLiquidity:.04},secondOrder:[{delay:2,headline:"Token unlock supply meets stronger demand",sectorEffects:{Crypto:-.002,"Crypto Yield":.003}}]},
+  {headline:"Productivity data surprises to the upside",summary:"Growth expectations improve without an immediate inflation spike.",severity:.55,direct:{TECH:.01,AION:.012,COPR:.007},sectorEffects:{Technology:.006,Industrials:.005},macroEffects:{growth:.002},secondOrder:[{delay:3,headline:"Earnings revisions broaden beyond mega-cap technology",sectorEffects:{Financials:.004,Industrials:.004,Healthcare:.002}}]},
+  {headline:"Stablecoin reserve disclosure calms markets",summary:"Liquidity returns to crypto cash equivalents and tokenized yield products.",severity:.45,direct:{USDQ:.001,TBTK:.004,ETHX:.006},sectorEffects:{"Crypto Cash":.001,"Crypto Yield":.004},macroEffects:{cryptoLiquidity:.02,creditSpread:-.0003},secondOrder:[]}
+];

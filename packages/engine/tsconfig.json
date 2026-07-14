@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {"composite": true, "declaration": true, "outDir": "dist"},
+  "references": [{"path": "../shared"},{"path": "../market-data"}],
+  "include": ["src/**/*.ts"]
+}

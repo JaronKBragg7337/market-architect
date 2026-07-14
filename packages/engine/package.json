@@ -1,0 +1,11 @@
+{
+  "name": "@market-architect/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {".": "./src/index.ts"},
+  "dependencies": {
+    "@market-architect/shared": "0.1.0",
+    "@market-architect/market-data": "0.1.0"
+  }
+}
